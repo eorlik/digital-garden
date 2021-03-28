@@ -98,7 +98,18 @@ a {
     content: "";
   }
 }
-/* 28 March 2021 - EO added div.wrapper specs */
+
+/* 28 March 2021 - EO added div.wrapper specs and custom styling for Tufte label */
+
+label.margin-toggle {
+  text-decoration: underline;
+  color: $color-primary;
+  &:hover {
+    color: blue !important;
+  }
+}
+
+
 div.wrapper {
   max-width:61.3em;
 }
