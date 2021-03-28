@@ -2,7 +2,7 @@
 title: Take a rake to it
 ---
 
-I set up this site as a place to display art projects but quickly took a left turn when I learned about digital gardens, like [Maggie Appleton’s](https://maggieappleton.com/garden) and [Tom Critchlow’s](https://tomcritchlow.com/wiki/) – experiments in open note taking which I see as a way of mapping and building on the things I think about, am inspired about, and make.
+I set up this site as a place to display art projects but quickly took a left turn when I learned about digital gardens, like [Maggie Appleton’s](https://maggieappleton.com/garden) and [Tom Critchlow’s](https://tomcritchlow.com/wiki/) experiments in open note taking which I see as a way of mapping and building on the things I think about, am inspired about, and make.
 
 This site is made with godaddy’s managed WordPress service which isn’t very flexible and I’m weighing up whether to switch to basic hosting and try to get to grips with some coding – all the best gardens look like they’re custom built and cobbled together with open source tools and templates. I’m not a coder so it’s daunting.
 

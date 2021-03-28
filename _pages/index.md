@@ -5,17 +5,19 @@ id: home
 permalink: /
 ---
 
-# Welcome! 🌱
+My name is Edward Orlik. I am an policymaker and artist living and working in Britain. My practice includes painting, video, collage, digital/IRL sculpture, and public service.
+I've set up this site as a [[take a rake to it|bit of an experiment]] - I'm hoping to create a simplied model of my own mind and at the same time display some of my work and workings-out.
 
-<p style="padding: 3em 1em; background: #f5f7ff; border-radius: 4px;">
-  Take a look at <span style="font-weight: bold">[[Your first note]]</span> to get started on your exploration.
-</p>
+## Index of all pages and notes
 
-This digital garden template is free, open-source, and [available on GitHub here](https://github.com/maximevaillancourt/digital-garden-jekyll-template).
+<ul>
+  {% for note in site.notes %}
+  <li>
+    <a href="{{ note.url }}">>{{ note.title }}</a>
+  </li>
+  {% endfor %}
+</ul>
 
-The easiest way to get started is to read this [step-by-step guide explaining how to set this up from scratch](https://maximevaillancourt.com/blog/setting-up-your-own-digital-garden-with-jekyll). If you need any help, my [DMs are open on Twitter (@vaillancourtmax)](https://twitter.com/vaillancourtmax). Say hi! 👋
-
-If this template helps you in any way, [consider buying me a coffee](https://ko-fi.com/maximevaillancourt)! ☕️
 
 <style>
   .wrapper {
