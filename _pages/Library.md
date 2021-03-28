@@ -33,3 +33,8 @@ Right now I'm starting to read *Letters to a Young Poet* by Rilke, and I'm *just
 
 </div>
 
+<style>
+  .wrapper {
+    max-width: 46em;
+  }
+</style>

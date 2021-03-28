@@ -220,6 +220,8 @@ figure.fullwidth figcaption {
 }
 
 /* Links: replicate underline that clears descenders */
+
+/* 28 March 2021: EO commenting out this section, which conflicts with style.scss
 a:link,
 a:visited {
     color: inherit;
@@ -253,6 +255,9 @@ a:link::-moz-selection {
     text-shadow: 0.03em 0 #b4d5fe, -0.03em 0 #b4d5fe, 0 0.03em #b4d5fe, 0 -0.03em #b4d5fe, 0.06em 0 #b4d5fe, -0.06em 0 #b4d5fe, 0.09em 0 #b4d5fe, -0.09em 0 #b4d5fe, 0.12em 0 #b4d5fe, -0.12em 0 #b4d5fe, 0.15em 0 #b4d5fe, -0.15em 0 #b4d5fe;
     background: #b4d5fe;
 }
+END OF COMMENTED-OUT SECTION 
+*/
+
 
 /* Sidenotes, margin notes, figures, captions */
 img {
@@ -261,10 +266,11 @@ img {
 
 .sidenote,
 .marginnote {
+    max-width: 15.3em;
     float: right;
     clear: right;
-    margin-right: -60%;
-    width: 50%;
+    margin-right: -30%;
+    width: 25%;
     margin-top: 0.3rem;
     margin-bottom: 0;
     font-size: 1.1rem;
