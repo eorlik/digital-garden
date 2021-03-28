@@ -10,10 +10,10 @@ This is your first note. You'll find it in the [`notes/`](https://github.com/max
 
 To link to another note, you can use multiple syntaxes. The following four use the "double-bracket" notation ([view the Markdown source file](https://github.com/maximevaillancourt/digital-garden-jekyll-template/blob/master/_notes/your-first-note.md#link-syntax) to see the underlying syntax).
 
-- Using the note title: [[a note about cats]]
-- Using the note's filename: [[cats]]
-- Using the note's title, with a label: [[A note about cats|link to the note about cats using the note title]]
-- Using the note's filename, with a label: [[cats|link to the note about cats using the note's filename]]
+- Using the note title: [[Take a rake to it]]
+- Using the note's filename: [[take a rake to it]]
+- Using the note's title, with a label: [[Take a rake to it|link to the note about cats using the note title]]
+- Using the note's filename, with a label: [[take a rake to it|link to the note about cats using the note's filename]]
 
 In all cases, if the double-bracket link does not point to a valid note, the double brackets will still be shown, like this: [[there is no note that matches this link]].
 
