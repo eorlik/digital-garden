@@ -1,4 +1,6 @@
 $color-primary: hsl(0, 0%, 10%);
+$color-accent: blue;
+$color-hover: orange;
 $color-text: hsl(0, 0%, 20%);
 $color-subtext: hsl(0, 0%, 30%);
 $color-border: hsl(0, 0%, 85%);
@@ -103,16 +105,13 @@ a {
 
 label.margin-toggle {
   text-decoration: underline;
-  color: $color-primary;
+  color: $color-accent;
   &:hover {
-    color: blue !important;
+    color: $color-hover !important;
   }
 }
 
 
-div.wrapper {
-  max-width:61.3em;
-}
 
 *:focus {
   background: #ffe8bc !important;
@@ -131,7 +130,7 @@ nav {
 }
 
 #nav-link { 
-  color:blue;
+  color: $color-accent;
   padding-left: 1em;
   padding-right: 1em;
   border-bottom: 0; 
