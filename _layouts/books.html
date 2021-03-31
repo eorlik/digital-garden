@@ -1,0 +1,17 @@
+---
+layout: default
+---
+
+
+<container class="card-stack">
+  {% for book in site.books %}
+<div class="card">
+  <p>{{book.title}}</p>
+  <p>{{book.author}}</p>
+</div>
+  {% endfor %}
+</container>
+
+<content>
+  {{ content }}
+</content>

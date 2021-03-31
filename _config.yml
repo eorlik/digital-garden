@@ -28,6 +28,8 @@ collections:
   notes:
     output: true
     permalink: /:slug
+  books:
+    output: true
 
 defaults:
   - scope:

@@ -9,18 +9,13 @@ My name is Edward Orlik. I am a policymaker and artist living and working in Bri
 I've set up this site as a [[take a rake to it|bit of an experiment]].
 
 ## Index of all notes
-
-<ul>
+<br>
+<div style="display:block">
+<container class="card-stack">
   {% for note in site.notes %}
-  <li>
-    <a href="{{ note.url }}">>{{ note.title }}</a>
-  </li>
+<div class="card">
+  <p>{{note.title}}</p>
+</div>
   {% endfor %}
-</ul>
-
-
-<style>
-  .wrapper {
-    max-width: 46em;
-  }
-</style>
+</container>
+</div>

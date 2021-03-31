@@ -1,9 +1,10 @@
 ---
-layout: page
+layout: books
 title: Library
-id: library
-permalink: /library
+id: books
+permalink: /books
 ---
+
 
 # Library
 

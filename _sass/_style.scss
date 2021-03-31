@@ -25,6 +25,10 @@ body {
   }
 }
 
+.wrapper {
+    max-width: 46em;
+  }
+
 time {
   display: block;
   color: $color-subtext;
@@ -125,17 +129,25 @@ nav {
 }
 
 #nav-links {
-  float:right; 
+  display:flex;
+  float:right;
+  flex-direction: row;
   border-bottom: 0; 
+
+  @media (max-width: 200px) {
+    flex-direction: column;
+  }
 }
 
-#nav-link { 
-  color: $color-accent;
+.nav-link { 
   padding-left: 1em;
   padding-right: 1em;
   border-bottom: 0; 
 }
 
+a#nav-link {
+  color: $color-accent;
+}
 
 #notes-entry-container {
   display: grid;
@@ -172,4 +184,39 @@ code {
 .invalid-link-brackets {
   color: #ccc;
   cursor: help;
+}
+
+// Card display
+
+container.card-stack {
+  margin: 0px auto;
+  display: grid;
+max-width: 1vp;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 45%));
+  grid-gap: 0.8em;
+
+@media (max-width: 550px){
+  grid-template-columns: 1fr;
+}
+}
+div.card {
+  position: relative;
+  border: 1px solid rgba(52, 61, 68, 0.05);
+  width: 100%;
+
+  vertical-align: middle;
+  border-radius: 6px;
+  box-shadow: rgba(52, 61, 68, 0.1) 0px 1px 2px;
+  transition: all 400ms ease-in-out 0s;
+  -moz-box-pack: justify;
+}
+
+div.card > p {
+  margin: 0.8em;
+}
+
+div.card:hover {
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 10px 30px -10px;
+    transform: scale(1.015);
+    border-radius: 0px 0px 6px 6px;
 }
