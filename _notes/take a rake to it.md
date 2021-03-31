@@ -1,5 +1,5 @@
 ---
-title: Take a rake to it
+title: What's this site for?
 ---
 
 I set up this site as a place to display art projects but quickly took a left turn when I learned about digital gardens, like [Maggie Appleton’s](https://maggieappleton.com/garden) and [Tom Critchlow’s](https://tomcritchlow.com/wiki/) experiments in open note taking which I see as a way of mapping and building on the things I think about, am inspired about, and make.
@@ -19,5 +19,3 @@ I’d like to include:
 💻 a catalogue of the tabs I’ve had open in my browser for weeks but not got around to properly reading
 
 ✏️ half-formed musings and ideas
-
-[[Your first seed]]

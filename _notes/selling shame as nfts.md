@@ -1,5 +1,5 @@
 ---
-title: Shame for sale
+title: Is shame fungible?
 ---
 
 I’ve been thinking about NFTs over the last few weeks. People are selling digital copies of GIFs and digital art for a lot of money; even before that, the [NBA was selling NFTs](https://nbatopshot.com/) associated with hot moves from past basketball games, which collectors would pay a lot for.
