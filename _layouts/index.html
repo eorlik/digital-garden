@@ -6,10 +6,13 @@ layout: default
   {{ content }}
 </content>
 
+
+<!--List of index cards-->
+
 <h3 style="text-align: center;">Index of all notes</h3>
 <br>
-<div style="display:block" markdown="1">
-  <container class="card-stack">
+<div style="display:block" >
+  <container class="card-stack-2col">
     {% for note in site.notes %}
     <a class="card-link"; style="display:block" href={{note.url}}>
       <div class="card">

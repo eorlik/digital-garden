@@ -188,7 +188,7 @@ code {
 
 // Card display
 
-container.card-stack {
+container.card-stack-2col {
   margin: 0px auto;
   display: grid;
 max-width: 1vp;
@@ -200,7 +200,19 @@ max-width: 1vp;
 }
 }
 
-container.card-stack > a {
+container.card-stack-4col {
+  margin: 0px auto;
+  display: grid;
+max-width: 1vp;
+  grid-template-columns: repeat(auto-fill, minmax(50px, 23%));
+  grid-gap: 0.8em;
+
+@media (max-width: 550px){
+  grid-template-columns: 1fr 1fr;
+}
+}
+
+container.card-stack-2col, container.card-stack-4col > a {
   text-decoration: none;
   color: $color-primary;
 }
@@ -209,7 +221,15 @@ div.card {
   position: relative;
   border: 1px solid rgba(52, 61, 68, 0.05);
   width: 100%;
+  vertical-align: middle;
+  border-radius: 6px;
+  box-shadow: rgba(52, 61, 68, 0.1) 0px 1px 2px;
+  transition: all 400ms ease-in-out 0s;
+  -moz-box-pack: justify;
+}
 
+img.book {
+  position: relative;
   vertical-align: middle;
   border-radius: 6px;
   box-shadow: rgba(52, 61, 68, 0.1) 0px 1px 2px;
@@ -221,7 +241,7 @@ div.card > p {
   margin: 0.8em;
 }
 
-div.card:hover {
+div.card:hover, img.book:hover {
     box-shadow: rgba(0, 0, 0, 0.15) 0px 10px 30px -10px;
     transform: scale(1.015);
     border-radius: 0px 0px 6px 6px;

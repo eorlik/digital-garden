@@ -2,15 +2,17 @@
 layout: default
 ---
 
+<!-- Book cover gallery-->
 
-<container class="card-stack">
-  {% for book in site.books %}
-<div class="card">
-  <p>{{book.title}}</p>
-  <p>{{book.author}}</p>
-</div>
-  {% endfor %}
-</container>
+<div style="display:block" >
+  <container class="card-stack-4col">
+    {% for book in site.books %}
+    <a class="card-link"; style="display:block" href={{book.url}}>
+      <div class="book"><img class ="book" src= {{book.image-url}}></div>
+    </a>
+    {% endfor %}
+  </container>
+  </div>
 
 <content>
   {{ content }}
