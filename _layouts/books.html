@@ -8,7 +8,7 @@ layout: default
   <container class="card-stack-4col">
     {% for book in site.books %}
     <a class="card-link"; style="display:block" href={{book.url}}>
-      <div class="book"><img class ="book" src= {{book.image-url}}></div>
+      <div class="book"><img class ="book" src= "/books/{{book.image-url}}"></div>
     </a>
     {% endfor %}
   </container>
