@@ -43,7 +43,7 @@ defaults:
 
 cloudinary:
   cloud_name: eoeoeoxyz
-  only_prod: true
+  only_prod: false
   verbose: true
   #origin_url: https://another-domain.com
   presets:
