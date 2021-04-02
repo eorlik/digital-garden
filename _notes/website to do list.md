@@ -6,10 +6,8 @@ title: website to do list
 
 ### Make the navigation links collapse into a hamburger on smaller viewports
 
-### Create a fancy pants contents page to hold my notes
-
-### Create library section
-Turn the Library page into a responsive, animated grid of images which link through to reviews etc. Create a sensible file structure to organise this.
+### Book layout
+Make book covers in the book layout responsive (e.g. disappearing on small screens)
 
 ### Add some images
 Store images on [Cloudinary](https://cloudinary.com/) or similar
