@@ -1,5 +1,6 @@
 ---
 title: Addressing viral misinformation through networked meat-based intelligence
+published: '2021-04-01'
 ---
 
 Two years ago I started working on internet policy for the UK government with what I thought was a very clever idea for squishing misinformation on social media at scale. I was quite pleased with this idea, reasoning that it would:

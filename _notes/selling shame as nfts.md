@@ -1,5 +1,6 @@
 ---
 title: Is shame fungible?
+published: '2021-04-01'
 ---
 
 I’ve been thinking about NFTs over the last few weeks. People are selling digital copies of GIFs and digital art for a lot of money; even before that, the [NBA was selling NFTs](https://nbatopshot.com/) associated with hot moves from past basketball games, which collectors would pay a lot for.
@@ -31,8 +32,8 @@ A catalogue of my greatest moments of shame
 
 ### # 1: Nativity piss 1995
 ### # 2: Highlighter 2006
-### # 3: Lower short hand job 2007
+<h3># 3: <span class="blackedout">Lower short hand job 2007</span></h3>
 ### # 4: An early cigarette 2007
-### # 5: The circumstances and experience of losing my virginity 2010
+<h3># 5: <span class="blackedout">The circumstances and experience of losing my virginity 2010</span></h3>
 ### # 6: I vomited a single kidney bean 2012 
 ### # 7: Calabrian fracas 2014

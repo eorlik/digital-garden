@@ -5,14 +5,16 @@ layout: default
 <!-- Book cover gallery-->
 
 <div style="display:block" >
+  {% assign booklist = site.books | sort: 'finished' | reverse %}
   <container class="card-stack-4col">
-    {% for book in site.books %}
+    {% for book in booklist %}
     <a class="card-link"; style="display:block" href={{book.url}}>
       <div class="book"><img class ="book" src= "/books/{{book.image-url}}"></div>
     </a>
     {% endfor %}
   </container>
   </div>
+
 
 <content>
   {{ content }}

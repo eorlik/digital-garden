@@ -40,6 +40,11 @@ defaults:
       path: "_notes/**/*.md"
     values:
       layout: "note"
+  - scope:
+      path: "_books/**/*.md"
+    values:
+      layout: "book"
+
 
 cloudinary:
   cloud_name: eoeoeoxyz

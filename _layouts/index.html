@@ -12,11 +12,13 @@ layout: default
 <h3 style="text-align: center;">Index of all notes</h3>
 <br>
 <div style="display:block" >
-  <container class="card-stack-2col">
-    {% for note in site.notes %}
+  {% assign noteList = site.notes | sort : 'published' | reverse %}
+  <container class="card-stack-3col">
+    {% for note in noteList %}
     <a class="card-link"; style="display:block" href={{note.url}}>
       <div class="card">
-        <p>{{note.title}}</p>
+        <h4>{{note.title}}</h4> 
+        <span class="indexDate">{{note.published| date: "%-d %B %Y" }}</span>
       </div>
     </a>
     {% endfor %}

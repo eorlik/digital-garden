@@ -1,5 +1,6 @@
 ---
 title: Your first seed
+publish: false
 ---
 
 ### Welcome!
