@@ -191,8 +191,8 @@ code {
 container.card-stack-3col {
   margin: 0px auto;
   display: grid;
-max-width: 1vp;
   grid-template-columns: repeat(auto-fill, minmax(100px, 31%));
+  justify-content: space-around;
   grid-gap: 0.8em;
 
 @media (max-width: 600px){
@@ -207,8 +207,8 @@ max-width: 1vp;
 container.card-stack-4col {
   margin: 0px auto;
   display: grid;
-max-width: 1vp;
   grid-template-columns: repeat(auto-fill, minmax(50px, 23%));
+  justify-content: space-around;
   grid-gap: 0.8em;
 
 @media (max-width: 550px){
@@ -222,25 +222,28 @@ container.card-stack-2col, container.card-stack-4col > a {
 }
 
 div.card {
-  display:grid;
-  grid-template-rows: 3fr 1fr;
   position: relative;
+  padding: 0.5em 0.8em;
   border: 1px solid rgba(52, 61, 68, 0.05);
-  width: 100%;
-  vertical-align: middle;
   border-radius: 6px;
   box-shadow: rgba(52, 61, 68, 0.1) 0px 1px 2px;
   transition: all 400ms ease-in-out 0s;
   -moz-box-pack: justify;
 }
 
-div.card > h4 {
-  margin: 0.2em 0.8em;
+.card > h5 {
+  padding: initial;
+  margin: initial;
 }
 
-.indexDate {
+div.card-metadata {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 0.4em;
+  padding-top: 0.2em;
+  border-top: solid 1px $color-subtext;
   color: $color-subtext;
-  font-size: 80%;
+  font-size: 65%;
 }
 
 img.book {
@@ -255,13 +258,26 @@ img.book {
 .card-link {
   text-decoration: none;
   color: $color-primary;
+  display:flex;
 }
 
-div.card:hover, img.book:hover {
-    box-shadow: rgba(0, 0, 0, 0.15) 0px 10px 30px -10px;
-    transform: scale(1.015);
-    border-radius: 0px 0px 6px 6px;
+.card-link > .book {
+  margin: auto;
 }
+
+div.card:hover {
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 10px 15px -10px;
+    transform: scale(1.01);
+    border-radius: 0px 0px 6px 6px;
+    border-top: $color-hover solid 2px;
+    margin: -1px 0;
+  }
+
+  img.book:hover {
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 10px 15px -10px;
+    transform: scale(1.01);
+  }
+
 
 .book-cover {
   margin: 1em -5em 1em 1em;

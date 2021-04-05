@@ -1,6 +1,6 @@
 ---
 title: What's this site for?
-published: '2021-04-01'
+updated: '2021-04-01'
 ---
 
 I set up this site as a place to display art projects but quickly took a left turn when I learned about digital gardens, like [Maggie Appleton’s](https://maggieappleton.com/garden) and [Tom Critchlow’s](https://tomcritchlow.com/wiki/) experiments in open note taking which I see as a way of mapping and building on the things I think about, am inspired about, and make.

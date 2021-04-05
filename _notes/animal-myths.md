@@ -1,6 +1,6 @@
 ---
-title: Animal Myths
-published: '2021-04-01'
+title: Animal myths
+updated: '2021-04-01'
 ---
 
 A catalogue of myths/allegories about animals. A work in progress.

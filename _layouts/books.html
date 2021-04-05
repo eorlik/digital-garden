@@ -12,7 +12,7 @@ layout: default
   {% assign booklist = site.books | sort: 'finished' | reverse %}
   <container class="card-stack-4col">
     {% for book in booklist %}
-    <a class="card-link"; style="display:block" href={{book.url}}>
+    <a class="card-link" href={{book.url}}>
       <div class="book"><img class ="book" src= "/books/{{book.image-url}}"></div>
     </a>
     {% endfor %}

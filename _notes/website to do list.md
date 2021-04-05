@@ -1,6 +1,6 @@
 ---
-title: website to do list
-published: '2021-04-01'
+title: Website to do list
+updated: '2021-04-01'
 ---
 
 # To do:

@@ -1,6 +1,5 @@
 @charset "UTF-8";
 
-
 /* Sidenotes, margin notes, figures, captions */
 img {
     max-width: 100%;
@@ -8,7 +7,7 @@ img {
 
 .sidenote,
 .marginnote {
-    color:blue;
+    color: blue;
     float: right;
     clear: right;
     margin-right: -30%;
@@ -104,7 +103,7 @@ label.margin-toggle:not(.sidenote-number) {
         position: relative;
         padding:0.5em;
         font-size: 80%;
-        box-shadow: gray 0em 0.1em 0.2em;
+        border-left: 1px solid blue ;
     }
 
     label {
