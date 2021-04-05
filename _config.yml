@@ -30,6 +30,8 @@ collections:
     permalink: /:slug
   books:
     output: true
+  pictures:
+    output: true
 
 defaults:
   - scope:

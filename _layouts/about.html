@@ -1,0 +1,51 @@
+---
+layout: default
+---
+<content>
+  {{ content }}
+</content>
+
+<container class="siteContents" style="clear:left">
+  {% assign noteList = site.notes | sort : 'updated' | reverse %}
+  {% assign pictureList = site.pictures | sort : 'date' | reverse %}
+  
+  <container class="containerBox" style="flex-basis: 25%; flex-grow: 4">
+    <h2 class="unstyledLink"><a class="unstyledLink" href="/notes">Notes</a></h2>
+  <container class="notesContainer">
+    {% for note in noteList limit:6 %}
+    <a class="card-link"; style="display:block" href={{note.url}}>
+      <div class="card" style="margin: 0.1em 0">
+        <h5>{{note.title}}</h4> 
+        <div class="card-metadata">
+          <span>  </span>
+          <span class="indexDate">Last update: {{note.updated | date: "%-d %B '%y" }}</span>
+        </div>
+      </div>
+    </a>
+    {% endfor %}
+  </container>
+</container>
+
+  <container class="containerBox" style="flex-basis: 75%; flex-grow:1.33">
+    <h2 class="unstyledLink"><a class="unstyledLink" href="/pictures">Pictures</a></h2>
+      <container class="picturesContainer">
+        {% for picture in pictureList limit:6 %}
+        <a class="galleryImage" href="{{picture.url}}">
+          <div>
+            <img class="artwork" src="/pictures/{{picture.image-url}}"  />
+          </div>
+        </a>
+        {% endfor %}
+      </container>
+ 
+  </container>
+
+</container>
+
+
+<style>
+  .wrapper {
+    max-width: 46em;
+  }
+</style>
+

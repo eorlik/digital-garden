@@ -81,7 +81,7 @@ h6 {
   padding-bottom: 0;
 }
 
-a:not(.card-link) {
+a:not(.card-link, .galleryImage, .unstyledLink) {
   transition: background 300ms;
   padding: 0 0.1em;
   text-decoration: none;
@@ -105,7 +105,6 @@ a:not(.card-link) {
   }
 }
 
-/* 28 March 2021 - EO added div.wrapper specs and custom styling for Tufte label */
 
 label.margin-toggle {
   text-decoration: underline;
@@ -204,7 +203,64 @@ container.card-stack-3col {
 }
 }
 
-container.card-stack-4col {
+.notesContainer {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(46%, 100%));
+  
+  @media (max-width: 560px){
+grid-template-columns: 1fr 1fr;
+    }
+    
+  @media (max-width: 450px){
+grid-template-columns: 1fr;
+    }
+}
+
+.unstyledLink {
+  text-decoration: none;
+  color: hsl(0, 0%, 10%);
+  margin-left: auto;
+  margin-right:auto;
+  margin-bottom: 1em;
+  text-align: center;
+}
+
+.siteContents {
+  margin-top: 1em;
+  display:flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.containerBox {
+  display: block;
+
+    }
+
+
+
+.picturesContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+
+a.galleryImage {
+        display: block;
+        margin: 0 0.4em 0.4em 0;
+    }
+
+
+
+.artwork {
+        max-height: 200px;
+        height: auto;
+        margin: 0 5px
+
+    }
+
+.card-stack-4col {
   margin: 0px auto;
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(50px, 23%));
@@ -216,7 +272,7 @@ container.card-stack-4col {
 }
 }
 
-container.card-stack-2col, container.card-stack-4col > a {
+.card-stack-2col, .card-stack-4col > a {
   text-decoration: none;
   color: $color-primary;
 }
