@@ -2,6 +2,7 @@
 title: Mike at Shadwell Basin
 image-url: assets/mike.jpg
 layout: default
+date: '2021-04-03'
 ---
 
 <div>

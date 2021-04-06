@@ -2,6 +2,7 @@
 title: Izzie and Consty
 image-url: assets/izzie-and-const.jpg
 layout: default
+date: '2021-04-03'
 ---
 
 <div>

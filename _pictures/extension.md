@@ -2,6 +2,7 @@
 title: Architectural sketches
 image-url: assets/extension1.jpg
 layout: default
+date: '2021-04-03'
 ---
 
 <div class="containerBox">

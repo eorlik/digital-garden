@@ -15,8 +15,3 @@ I'll take [Maggie Appleton's digital library](https://maggieappleton.com/library
 Right now I'm starting to read *Letters to a Young Poet* by Rilke. Here are the latest books I've actually finished, or at least made some headway on:
 
 
-<style>
-  .wrapper {
-    max-width: 46em;
-  }
-</style>
