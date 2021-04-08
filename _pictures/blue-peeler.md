@@ -7,4 +7,5 @@ date: '2021-04-03'
 
 <div>
 {% cloudinary {{page.image-url}} alt="A still life with a knife, peeler and orange" %}
+{% cloudinary pictures/assets/blue-peeler.jpg alt="A still life with a knife, peeler and orange" %}
 </div>
