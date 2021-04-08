@@ -1,6 +1,10 @@
----
-layout: default
----
+<!DOCTYPE html>
+<html id="html" lang="en">
+  {% include head.html %}
+
+  <body id="noteBody">
+    <div class="wrapper" id="noteWrapper">
+      <nav>{% include nav.html %}</nav>
 
 <article>
   <div>
@@ -42,8 +46,12 @@ layout: default
 
 <!-- {% include notes_graph.html %} -->
 
-<style>
-  .wrapper {
-    max-width: 61.3em;
-  }
-</style>
+
+<footer>{% include footer.html %}</footer>
+</div>
+
+{% include link-previews.html wrapperQuerySelector="content" %}
+</body>
+
+</html>
+

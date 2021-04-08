@@ -1,8 +1,8 @@
 ---
-layout: books
+layout: library
 title: Library
-id: books
-permalink: /books
+id: library
+permalink: /library
 ---
 
 
