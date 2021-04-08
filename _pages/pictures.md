@@ -11,15 +11,15 @@ permalink: /pictures
 
   <div style="display:block" >
     {% assign pictureList = site.pictures | sort : 'date' | reverse %}
-    <container class="containerBox">
+    <div class="containerBox">
       {% for picture in pictureList %}
-      <a class="galleryImage" href="{{picture.url}}">
+      <!-- <a class="galleryImage" href="{{picture.url}}"> -->
         <div>
-          <img src="/pictures/{{picture.image-url}}"  />
+          {% cloudinary pictures/{{picture.image-url}} %}
         </div>
-      </a>
+      <!-- </a> -->
       {% endfor %}
-    </container>
+    </div>
     </div>
 
 <style>
@@ -32,11 +32,10 @@ permalink: /pictures
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
+        gap: 1rem;
     }
 
-    .artwork {
-        max-height: 500px;
-        margin: 0 20px
+    img {
 
     }
 </style>
