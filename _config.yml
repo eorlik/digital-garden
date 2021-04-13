@@ -51,7 +51,7 @@ defaults:
 cloudinary:
   cloud_name: eoeoeoxyz
   only_prod: false
-  verbose: true
+  verbose: false
   origin_url: https://www.eoeoeo.xyz
   presets:
     default:

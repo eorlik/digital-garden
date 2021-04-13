@@ -210,7 +210,19 @@ code {
 
 // Card display
 
-div.card-stack-3col {
+.card-stack-4col {
+  margin: 0px auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(50px, 23%));
+  justify-content: space-around;
+  grid-gap: 0.8em;
+
+@media (max-width: 550px){
+  grid-template-columns: 1fr 1fr;
+}
+}
+
+.card-stack-3col {
   margin: 0px auto;
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(100px, 31%));
@@ -224,6 +236,11 @@ div.card-stack-3col {
 @media (max-width: 450px){
   grid-template-columns: 1fr;
 }
+}
+
+.card-stack-2col, .card-stack-3col, .card-stack-4col > a {
+  text-decoration: none;
+  color: $color-primary;
 }
 
 .notesContainer {
@@ -267,7 +284,7 @@ grid-template-columns: 1fr;
   flex-wrap: wrap;
   justify-content: center;
   gap:0.5rem;
-  margin-left:1.2rem;
+  margin-left: 2rem;
 }
 
 
@@ -282,23 +299,6 @@ a.galleryImage {
         height: auto;
 
     }
-
-.card-stack-4col {
-  margin: 0px auto;
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(50px, 23%));
-  justify-content: space-around;
-  grid-gap: 0.8em;
-
-@media (max-width: 550px){
-  grid-template-columns: 1fr 1fr;
-}
-}
-
-.card-stack-2col, .card-stack-4col > a {
-  text-decoration: none;
-  color: $color-primary;
-}
 
 div.card {
   position: relative;
@@ -359,9 +359,10 @@ div.card:hover {
 
 
 .book-cover {
-  margin: 1em -5em 1em 1em;
+  margin: 1em 1em 1em 3em;
   float: right;
-  width: 10em; 
+  max-width: 10em; 
+  height: auto;
   @media (max-width:600px){width:5em; margin-right:2.5em;}
 }
 

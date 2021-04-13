@@ -13,7 +13,8 @@ layout: default
   <container class="card-stack-4col">
     {% for book in booklist %}
     <a class="card-link" href={{book.url}}>
-      <div class="book"><img class ="book" src= "/books/{{book.image-url}}"></div>
+      <!--<div class="book"><img class ="book" src= "/books/{{book.image-url}}"></div>-->
+      {% cloudinary books/{{book.image-url}} class="book" %}
     </a>
     {% endfor %}
   </container>
